@@ -1,0 +1,25 @@
+.Note {
+  margin: 0;
+  height: 90px;
+  background: #e3e5e6;
+  text-align: center;
+}
+
+.noteParagraph {
+  margin: 0;
+  position: relative;
+  top: 25%;
+  font-size: 12px;
+  color: #5f5f5f;
+}
+
+.noteButton {
+  background: #08ca89;
+  height: 35px;
+  width: 90px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+  margin-left: 10px;
+}

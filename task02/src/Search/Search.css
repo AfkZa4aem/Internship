@@ -1,0 +1,48 @@
+.Search {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rightPart {
+  margin-left: 20px;
+}
+
+.rightPart select{
+  border: none;
+  background: #fff;
+  background-image: url(https://cdn.dribbble.com/assets/icon-select-arrow-bc8a50c1bbee2bd67d482586513c71edb091636d85866b1871f4e11bfe4b6682.png?4);
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  -webkit-appearance: none;
+  font-weight: 600;
+  font-size: 12px;
+  padding-right: 19px;
+  position: relative;
+  top: 15px;
+  cursor: pointer;
+}
+
+.leftPart {
+  margin-right: 20px;
+  font-weight: 900;
+}
+
+.leftPart li {
+  margin-left: 7px;
+  font-size: 12px;
+}
+
+.leftPart li:first-child {
+  font-weight: 400;
+}
+
+.sortType {
+  color: #000;
+  font-weight: 400;
+}
+
+.followers {
+  font-weight: 400;
+  color: #269cc8;
+}

@@ -1,0 +1,47 @@
+.Header {
+  background: #323534;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin-left: 15px;
+  color: #8a8a8a;
+  font-size: 14px;
+}
+
+.Header li:hover {
+  color: #fff;
+}
+
+.logo {
+  margin: auto 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.RightSide {
+  margin-right: 20px;
+}
+
+.navSearch {
+  border: none;
+  border-radius: 3px;
+  padding: 5px 5px 5px 25px;
+  background-image: url(https://cdn.dribbble.com/assets/icon-search-7a07ad9f258fc1d8c28a29faa5627b41c2cc353d138b6bc3e987e0719584ce69.png);
+  background-repeat: no-repeat;
+  background-position: 7px 50%;
+}
+
+.dots {
+  position: relative;
+  bottom: 3px;
+  font-weight: 900;
+}
