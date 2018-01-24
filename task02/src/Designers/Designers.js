@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import './Designers.css';
 
 class Designers extends Component {
@@ -7,34 +8,19 @@ class Designers extends Component {
   };
 
   componentDidMount() {
-    fetch('https://5a60889111654a0012d3013f.mockapi.io/imagecard/users')
-    .then(response => {
-      console.log(response);
-      response.json();
-    })
-    .then(responseData => {
-      console.log(responseData);
-      this.setState({
-        items: responseData
+    axios.get('https://5a422991e1542700129be910.mockapi.io/imagecard/users')
+      .then(response => {
+        this.setState({
+          items: response.data
+        });
       });
-    })
-    .catch(error => {
-      console.log('Fetching and parsing data error', error)
-    })
   }
 
   render(){
-    const designersData = this.state.items;
-    console.log(designersData);
+    console.log(this.state.items);
     return (
       <div className="Designers">
-      {/* {items.map(function(item) {
-        return (
-          <h4 key={item.id}>
-            {item.name} has {item.followers} followers
-          </h4>
-        );
-      })} */}
+      
       </div>
     );
   }
