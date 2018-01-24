@@ -13,7 +13,7 @@ li {
   display: inline;
   margin-left: 15px;
   color: #8a8a8a;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .Header li:hover {
@@ -23,8 +23,8 @@ li {
 .logo {
   margin: auto 20px;
   color: #fff;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .RightSide {

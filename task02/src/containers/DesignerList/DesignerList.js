@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import Designer from '../../components/Designer/Designer';
 import './DesignerList.css';
 
 class DesignerList extends Component {
@@ -20,7 +21,8 @@ class DesignerList extends Component {
     console.log(this.state.items);
     return (
       <div className="DesignerList">
-        
+        <Designer />
+        <hr/>
       </div>
     );
   }

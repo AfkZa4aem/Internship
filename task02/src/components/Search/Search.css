@@ -16,7 +16,7 @@
   background-position: 100% 50%;
   -webkit-appearance: none;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   padding-right: 19px;
   position: relative;
   top: 15px;
@@ -30,7 +30,7 @@
 
 .leftPart li {
   margin-left: 7px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .leftPart li:first-child {
