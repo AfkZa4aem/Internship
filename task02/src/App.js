@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Header from './Header/Header';
-import Note from './Note/Note';
-import Search from './Search/Search';
-import Designers from './Designers/Designers';
+import Header from './components/Header/Header';
+import Note from './components/Note/Note';
+import Search from './components/Search/Search';
+import DesignerList from './containers/DesignerList/DesignerList';
 import './App.css';
 
 class App extends Component {
@@ -12,7 +12,7 @@ class App extends Component {
         <Header />
         <Note />
         <Search />
-        <Designers />
+        <DesignerList />
       </div>
     );
   }

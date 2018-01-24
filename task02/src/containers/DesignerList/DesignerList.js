@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import './Designers.css';
+import './DesignerList.css';
 
-class Designers extends Component {
+class DesignerList extends Component {
   state = {
     items: []
   };
@@ -19,11 +19,11 @@ class Designers extends Component {
   render(){
     console.log(this.state.items);
     return (
-      <div className="Designers">
-      
+      <div className="DesignerList">
+        
       </div>
     );
   }
 };
 
-export default Designers;
+export default DesignerList;
