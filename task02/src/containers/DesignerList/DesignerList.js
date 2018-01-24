@@ -18,11 +18,18 @@ class DesignerList extends Component {
   }
 
   render(){
+    const designers = this.state.items.map(item => {
+      return <Designer 
+                key={item.id} 
+                img={item.imageUrl}
+                name={item.name}
+                num={item.followers}
+                email={item.email}/>;
+    });
     console.log(this.state.items);
     return (
       <div className="DesignerList">
-        <Designer />
-        <hr/>
+        {designers}
       </div>
     );
   }

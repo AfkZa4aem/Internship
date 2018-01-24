@@ -1,23 +1,25 @@
 import React from 'react';
 import './Designer.css';
 
-const designer = () => {
+const designer = (props) => {
   return(
     <div className='Designer'>
       <div className="UserPict">
-        <img alt="username" src="https://randomuser.me/api/portraits/men/48.jpg"/>
+        <img alt={props.name} src={props.img}/>
       </div>
       <div className='UserInfo'>
-        <h4 className='DesignerUsername'>Username</h4>
+        <h4 className='DesignerUsername'>{props.name}</h4>
         <h5 className='DesignerLocation'>Location</h5>
         <p className='DesignerDesc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae egestas neque.</p>
         <div className='DesignerIcons'>
           <div>
-          <i class="fas fa-plus fa-2x"></i>
-          <i class="fas fa-envelope fa-2x"></i>
+          <i className="fas fa-plus fa-2x"></i>
+          <a href={"mailto:" + props.email}>
+            <i className="fas fa-envelope fa-2x"></i>
+          </a>
           </div>
-          <div >
-            <p className='followersNumber'>23,536</p>
+          <div>
+            <p className='followersNumber'>{props.num}</p>
             <p className='followers'>followers</p>
           </div>
         </div>
