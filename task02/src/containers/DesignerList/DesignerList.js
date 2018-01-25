@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import Designer from '../../components/Designer/Designer';
 import './DesignerList.css';
 
@@ -9,12 +8,15 @@ class DesignerList extends Component {
   };
 
   componentDidMount() {
-    axios.get('https://5a422991e1542700129be910.mockapi.io/imagecard/users')
-      .then(response => {
-        this.setState({
-          items: response.data
-        });
-      });
+    fetch('https://5a60889111654a0012d3013f.mockapi.io/imagecard/users')
+    .then(results => {
+      return results.json();
+    }).then(data => {
+      this.setState({
+        items: data
+      })
+      console.log (this.state);
+    })
   }
 
   render(){
@@ -26,7 +28,6 @@ class DesignerList extends Component {
                 num={item.followers}
                 email={item.email}/>;
     });
-    console.log(this.state.items);
     return (
       <div className="DesignerList">
         {designers}
