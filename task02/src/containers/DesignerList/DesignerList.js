@@ -15,7 +15,6 @@ class DesignerList extends Component {
       this.setState({
         items: data
       })
-      console.log (this.state);
     })
   }
 
@@ -23,6 +22,7 @@ class DesignerList extends Component {
     const designers = this.state.items.map(item => {
       return <Designer 
                 key={item.id} 
+                id={item.id}
                 img={item.imageUrl}
                 name={item.name}
                 num={item.followers}
