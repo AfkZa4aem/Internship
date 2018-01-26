@@ -1,4 +1,5 @@
 import React from 'react';
+import SingleGallery from '../SingleGallery/SingleGallery'
 import './Designer.css';
 
 const designer = (props) => {
@@ -25,14 +26,7 @@ const designer = (props) => {
         </div>
         <p className='DesignerDesc'>Fusce nec auctor nisl, eget accumsan est. Mauris vitae dolor orci.</p>
       </div>
-      <div className='DesignerGallery'>
-        <div className='DesignerSinglePict'>
-          <img alt='img01' src='https://unsplash.it/512?image=90'/>
-        </div>
-{/*         
-        <img alt='img02' src='https://unsplash.it/512?image=90'/>
-        <img alt='img03' src='https://unsplash.it/512?image=90'/> */}
-      </div>
+      <SingleGallery id={props.id}/>
     </div>
   )
 };

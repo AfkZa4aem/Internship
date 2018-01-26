@@ -1,14 +1,15 @@
 import React from 'react';
 import './Header.css'
+import logo from '../../assets/logo.png';
 
 const header = () => {
   return(
     <div className='Header'>
       <div className='LeftSide'>
         <ul>
-          <li className="logo">Dribbble</li>
+          <li className="logo"><img src={logo} alt='logo'/></li>
           <li>Shots</li>
-          <li>Designers</li>
+          <li className="ActiveMenu">Designers</li>
           <li>Blog</li>
           <li>Podcast</li>
           <li>Meetups</li>

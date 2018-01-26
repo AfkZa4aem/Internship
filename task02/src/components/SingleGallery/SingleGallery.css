@@ -1,0 +1,19 @@
+.DesignerGallery {
+  width: 69%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.DesignerSinglePict {
+  margin: 15px 0 15px 20px;
+  width: 200px;
+  height: 140px;
+  background: #fff;;
+}
+
+.DesignerSinglePict img {
+  margin: 10px auto;
+  display: block;
+  width: 90%;
+  height: 85%;
+}
